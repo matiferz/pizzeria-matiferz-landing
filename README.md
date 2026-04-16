@@ -36,6 +36,7 @@ El objetivo de este proyecto fue practicar:
 pizzeria-matiferz/
 │
 ├── index.html
+├── README.md
 ├── css/
 │ └── styles.css
 ├── img/

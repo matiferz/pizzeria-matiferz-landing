@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf3;
+}
+
+.header{
+    background-color: #8b1e1e;
+    padding: 12px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.nav-bar{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 80px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff8e7;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #ffd166;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    height: calc(100vh - 90px);
+    background-image: url("../img/heroPizza.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text{
+    max-width: 480px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 35px;
+    border-radius: 14px;
+    line-height: 1.1;
+}
+
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn-hero{
+    display: inline-block;
+    background-color: #c1121f;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-hero:hover{
+    background-color: #a30f1a;
+}
+
+.menu{
+    background-color: #f8f1e7;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.menu h2{
+    color: #8b1e1e;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.menu-subtitle{
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    color: #444;
+}
+
+.menu-category{
+    font-size: 30px;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.menu-grid{
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-card{
+    width: 260px;
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover{
+    transform: translateY(-6px);
+}
+
+.menu-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.menu-card h4{
+    font-size: 22px;
+    color: #8b1e1e;
+    margin: 18px 18px 10px;
+}
+
+.menu-card p{
+    font-size: 16px;
+    color: #555;
+    margin: 0 18px 15px;
+    line-height: 1.4;
+}
+
+.menu-card span{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c1121f;
+    margin: 0 18px 20px;
+}
+
+.nosotros{
+    background-color: #fffaf3;
+    padding: 80px 60px;
+}
+
+.nosotros-contenido{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nosotros-texto{
+    flex: 1;
+}
+
+.nosotros-texto h2{
+    font-size: 42px;
+    color: #8b1e1e;
+    margin-bottom: 20px;
+}
+
+.nosotros-texto p{
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.nosotros-items{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.item{
+    background-color: #f8f1e7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    flex: 1;
+}
+
+.item h3{
+    color: #8b1e1e;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.item p{
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.nosotros-imagen{
+    flex: 1;
+}
+
+.nosotros-imagen img{
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.contacto{
+    background-color: #f8f1e7;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.contacto h2{
+    font-size: 42px;
+    color: #8b1e1e;
+    margin-bottom: 50px;
+}
+
+.contacto-contenido{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    text-align: left;
+}
+
+.contacto-info{
+    flex: 1;
+}
+
+.contacto-info h3{
+    color: #8b1e1e;
+    margin-bottom: 5px;
+}
+
+.contacto-info p{
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.contacto-form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-form input,
+.contacto-form textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contacto-form textarea{
+    resize: none;
+    height: 120px;
+}
+
+.contacto-form button{
+    background-color: #c1121f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacto-form button:hover{
+    background-color: #a30f1a;
+}
+
+.footer{
+    background-color: #8b1e1e;
+    color: #fff8e7;
+    padding: 50px 60px 20px;
+}
+
+.footer-contenido{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-marca,
+.footer-links,
+.footer-contacto{
+    flex: 1;
+}
+
+.footer-logo{
+    height: 75px;
+    margin-bottom: 15px;
+}
+
+.footer-marca p{
+    color: #f3e9d2;
+    line-height: 1.6;
+    max-width: 250px;
+}
+
+.footer-links h3,
+.footer-contacto h3{
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.footer-links a{
+    display: block;
+    text-decoration: none;
+    color: #fff8e7;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #ffd166;
+}
+
+.footer-contacto p{
+    margin-bottom: 10px;
+    color: #f3e9d2;
+    line-height: 1.5;
+}
+
+.footer-copy{
+    border-top: 1px solid rgba(255, 248, 231, 0.25);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #f3e9d2;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 992px){
+
+    .header{
+        padding: 12px 20px;
+    }
+
+    .nav-bar{
+        max-width: 100%;
+    }
+
+    .logo{
+        height: 70px;
+    }
+
+    .nav-links{
+        gap: 20px;
+    }
+
+    .nav-links a{
+        font-size: 16px;
+    }
+
+    .hero{
+        padding: 40px;
+        height: auto;
+        min-height: calc(100vh - 90px);
+    }
+
+    .hero-text{
+        max-width: 420px;
+        padding: 30px;
+    }
+
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+    .hero-text p{
+        font-size: 18px;
+    }
+
+    .menu,
+    .nosotros,
+    .contacto,
+    .footer{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .nosotros-contenido{
+        flex-direction: column;
+    }
+
+    .nosotros-items{
+        flex-wrap: wrap;
+    }
+
+    .item{
+        min-width: 220px;
+    }
+
+    .contacto-contenido{
+        flex-direction: column;
+    }
+
+    .footer-contenido{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ================= CELULAR ================= */
+@media (max-width: 768px){
+
+    .header{
+        padding: 15px 20px;
+    }
+
+    .nav-bar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo{
+        height: 65px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a{
+        font-size: 16px;
+    }
+
+    .hero{
+        padding: 20px;
+        min-height: auto;
+        height: auto;
+        justify-content: center;
+    }
+
+    .hero-text{
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .hero-text h1{
+        font-size: 34px;
+    }
+
+    .hero-text p{
+        font-size: 17px;
+    }
+
+    .btn-hero{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu,
+    .nosotros,
+    .contacto,
+    .footer{
+        padding: 60px 20px;
+    }
+
+    .menu h2,
+    .nosotros-texto h2,
+    .contacto h2{
+        font-size: 32px;
+    }
+
+    .menu-subtitle{
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .menu-category{
+        font-size: 26px;
+    }
+
+    .menu-grid{
+        gap: 20px;
+    }
+
+    .menu-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .nosotros-contenido{
+        gap: 30px;
+    }
+
+    .nosotros-texto p{
+        font-size: 16px;
+    }
+
+    .nosotros-items{
+        flex-direction: column;
+    }
+
+    .nosotros-imagen img{
+        height: auto;
+    }
+
+    .contacto-contenido{
+        gap: 30px;
+    }
+
+    .contacto-info,
+    .contacto-form{
+        width: 100%;
+    }
+
+    .footer-contenido{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-marca p{
+        max-width: 100%;
+    }
+}
+
+
+/* ================= CELULAR CHICO ================= */
+@media (max-width: 480px){
+
+    .logo{
+        height: 55px;
+    }
+
+    .hero-text{
+        padding: 20px;
+    }
+
+    .hero-text h1{
+        font-size: 28px;
+    }
+
+    .hero-text p{
+        font-size: 16px;
+    }
+
+    .btn-hero{
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .menu h2,
+    .nosotros-texto h2,
+    .contacto h2{
+        font-size: 28px;
+    }
+
+    .menu-category{
+        font-size: 24px;
+    }
+
+    .menu-card h4{
+        font-size: 20px;
+    }
+
+    .menu-card p,
+    .contacto-info p,
+    .contacto-form input,
+    .contacto-form textarea{
+        font-size: 15px;
+    }
+
+    .footer{
+        padding: 50px 20px 20px;
+    }
+
+    .footer-logo{
+        height: 65px;
+    }
+}

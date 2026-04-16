@@ -33,14 +33,10 @@ El objetivo de este proyecto fue practicar:
 
 #Estructura del proyecto
 
-   pizzeria-matiferz/
-    │
-    ├── index.html
-    ├── README.md
-    ├── css/
-    │   └── styles.css
-    ├── img/
-    │   └── (imagenes del proyecto)
+- index.html
+- README.md
+- css/styles.css
+- img/ (imagenes del proyecto)
 
 #Autor
 

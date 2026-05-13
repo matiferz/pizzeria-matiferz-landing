@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria Matiferz</title>
+    <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,6 +15,7 @@
             <img src="img/Logo vintage de Pizzería Matiferz.png" alt="Logo Pizzeria" class="logo">
 
             <div class="nav-links">
+            <a href="#inicio">Inicio</a>
             <a href="#menu">Menú</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
@@ -149,9 +151,9 @@
         </div>
 
         <form class="contacto-form" action="#">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensaje" required></textarea>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
             <button type="submit">Enviar</button>
         </form>
 
@@ -185,6 +187,11 @@
     </div>
 </footer>
 
+<a href="https://wa.me/541112345678" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensaje por WhatsApp">
+    <img src="img/logo-whatsapp.svg" alt="WhatsApp">
+</a>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

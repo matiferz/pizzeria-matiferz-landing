@@ -6,6 +6,7 @@ Landing page responsive para una pizzería ficticia, desarrollada como proyecto 
 
 - HTML5
 - CSS3 (Flexbox, diseño responsive)
+- JavaScript
 
 
 #Características
@@ -18,6 +19,7 @@ Landing page responsive para una pizzería ficticia, desarrollada como proyecto 
   - Nosotros
   - Contacto con formulario
   - Footer
+  - Botón WhatsApp
 - Diseño responsive para distintos dispositivos
 - Uso de imágenes personalizadas
 
@@ -37,6 +39,7 @@ El objetivo de este proyecto fue practicar:
 - README.md
 - css/styles.css
 - img/ (imagenes del proyecto)
+- js/script.js
 
 #Autor
 
